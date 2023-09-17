@@ -14,15 +14,12 @@
   width: 100%;
 }
 
-ul,
-li {
-  list-style-type: none;
-}
-
 .slide-pagination {
   display: flex;
   gap: 5px;
 
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
