@@ -1,0 +1,28 @@
+.container {
+  width: 600vw;
+  transition: transform 0.5s;
+}
+.non-scroll {
+  overflow: hidden;
+}
+.banner {
+  display: flex;
+  width: 100vw;
+}
+
+.banner img {
+  width: 100%;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.slide-pagination {
+  display: flex;
+  gap: 5px;
+
+  position: absolute;
+  bottom: 0;
+}
