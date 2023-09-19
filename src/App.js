@@ -143,7 +143,7 @@ function App() {
           {isSwipe && <img src={pause} className="img-pause" alt="" />}
           {!isSwipe && <img src={play} className="img-play" alt="" />}
         </button>
-        <div className="pagination">{pagecnt}/6</div>
+        <div className="pagination">{pagecnt} / 6</div>
       </div>
     </div>
   );
