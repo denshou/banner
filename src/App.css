@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 19vw;
+  top: 50%;
   z-index: 11;
   width: 3rem;
   height: 3rem;
@@ -34,19 +34,23 @@
   border-radius: 100px;
   cursor: pointer;
 }
-.left-arrow {
-  width: 1.5rem;
-  margin-right: 0.1rem;
+.banner-button:disabled {
+  background-color: #f0f0f0;
 }
-.right-arrow {
-  width: 1.5rem;
-  margin-left: 0.1rem;
-}
+
 .button-prev {
   left: 8.2vw;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.75 19.5L8.25 12l7.5-7.5' /%3E%3C/svg%3E%0A");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 0.6rem center;
 }
 .button-next {
   right: 8.2vw;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M8.25 4.5l7.5 7.5-7.5 7.5' /%3E%3C/svg%3E%0A");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 0.8rem center;
 }
 .swiper-play {
   width: 2.5rem;
@@ -54,9 +58,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #1a1d21;
+  border: 1px solid rgba(26, 29, 33, 0.9);
   border-radius: 100px;
-  background-color: #1a1d21;
+  background-color: rgba(26, 29, 33, 0.9);
   cursor: pointer;
 }
 .img-play {
@@ -94,9 +98,9 @@
   bottom: 1rem;
   right: 10rem;
   color: white;
-  background-color: #1a1d21;
+  background-color: rgba(26, 29, 33, 0.9);
   width: 5rem;
   height: 2.5rem;
-  border: 1px solid #1a1d21;
+  border: 1px solid rgba(26, 29, 33, 0.9);
   border-radius: 100px;
 }

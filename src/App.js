@@ -10,8 +10,6 @@ function App() {
   const banner6 = "/b6.jpg";
   const play = "/play.svg";
   const pause = "/pause.svg";
-  const leftArrow = "/left.svg";
-  const rightArrow = "/right.svg";
 
   const MAX_SLIDES = 6;
   const TOTAL_SLIDES = MAX_SLIDES + 4;
@@ -52,6 +50,9 @@ function App() {
     }
     if (!isSwipe) {
       clearTimeout(loop);
+      if (swiperCurrentPosition === 8) {
+        setSwiperCurrentPosition(2);
+      }
     } else {
       const swiperLoop = setTimeout(() => {
         setSwiperCurrentPosition((prev) => {
@@ -101,8 +102,6 @@ function App() {
     setTimeout(() => {
       event.target.disabled = false;
     }, 500);
-
-    console.log(event.target.disabled);
   };
   const handleBannerRight = (event) => {
     setSwiperCurrentPosition((prev) => prev + 1);
@@ -128,16 +127,12 @@ function App() {
           type="button"
           className="banner-button button-prev"
           onClick={handleBannerLeft}
-        >
-          <img src={leftArrow} className="left-arrow" alt="" />
-        </button>
+        ></button>
         <button
           type="button"
           className="banner-button button-next"
           onClick={handleBannerRight}
-        >
-          <img src={rightArrow} className="right-arrow" alt="" />
-        </button>
+        ></button>
         <section className="banner" ref={swiperRef}>
           {bannerState.map((src, index) => (
             <img src={src} alt="" key={index}></img>
